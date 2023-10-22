@@ -1,0 +1,138 @@
+.container {
+    display: grid;
+    max-width: 375px;
+    min-height: 700px;
+    margin: auto;
+    border: 2px solid #626262;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px 20px;
+    row-gap: 10px;
+}
+
+.nav {
+    background-color: #ffffff;
+}
+
+.nav-name {
+    color: #ea5b3c;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-menu {
+    color: #626262;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.banner {
+    background-color: #ffecd5;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 10px;
+    display: grid;
+}
+
+.banner-item1 {
+    background-color: #feffe4;
+}
+
+.banner-item2 {
+    background-color: #feffe4;
+}
+
+.main {
+    background-color: #ffffff;
+    display: grid;
+    gap: 10px;
+}
+
+.item {
+    border-radius: 10px;
+}
+
+.main-item1 {
+    background-color: #fdc788;
+}
+
+.main-item2 {
+    background-color: #ff9d9c;
+}
+
+.main-item3 {
+    background-color: #95ffb9;
+}
+
+.main-item4 {
+    background-color: #80c3f2;
+}
+
+.main-item5 {
+    background-color: #a281e7;
+}
+
+.main-item6 {
+    background-color: #f0f0f0;
+}
+
+.main-item7 {
+    background-color: #f0f0f0;
+}
+
+.footer {
+    background-color: #6a85f0;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+/* Adjustment */
+.container {
+    grid-template-rows: 1fr 28% 56% 1fr;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 330px 50px;
+    align-items: center;
+}
+
+.banner {
+    grid-template-columns: 1fr 3fr;
+}
+
+.main-item1 {
+    grid-area: mi1;
+}
+
+.main-item2 {
+    grid-area: mi2;
+}
+
+.main-item3 {
+    grid-area: mi3;
+}
+
+.main-item4 {
+    grid-area: mi4;
+}
+
+.main-item5 {
+    grid-area: mi5;
+}
+
+.main-item6 {
+    grid-area: mi6;
+}
+
+.main-item7 {
+    grid-area: mi7;
+}
+
+.main {
+    grid-template:
+        'mi1 mi1 mi1 mi2 mi2 mi2'
+        'mi3 mi3 mi4 mi4 mi5 mi5'
+        'mi6 mi6 mi6 mi6 mi6 mi7'
+}
